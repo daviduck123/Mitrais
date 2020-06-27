@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+	<th:block th:replace="default :: headLoad"></th:block>
+	<link rel="stylesheet" type="text/css" media="screen" th:href="@{/css/register.css}" />
+<head>
+</head>
+<body>
+	<div class="row centered-form">
+    	<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+       		<div class="panel panel-default">
+       			<div class="panel-heading">
+    				<h3 class="panel-title">Registration</h3>
+ 				</div>
+		 		<div class="panel-body">
+			    	<form role="form" id="formRegistration">
+		    			<div class="form-group">
+		    				<input type="text" name="mobile" id="mobile" class="form-control input-sm"  placeholder="Mobile number">
+		    			</div>
+		    			<div class="form-group">
+		    				<input type="text" name="firstName" id="firstName" class="form-control input-sm" placeholder="First name">
+		    			</div>
+		    			<div class="form-group">
+		    				<input type="text" name="lastName" id="lastName" class="form-control input-sm" placeholder="Last name">
+		    			</div>
+						<div class="form-group">
+							<label>Date of Birth</label>
+						</div>
+		    			<div class="row">
+		    				<div class="col-xs-3 col-sm-3 col-md-3">
+		    					<div class="form-group">
+		    						<select id="dropdownYear" name="year" class="form-control"></select>
+		    					</div>
+		    				</div>
+		    				<div class="col-xs-3 col-sm-3 col-md-3">
+		    					<div class="form-group">
+		    						<select id="dropdownMonth" name="month" class="form-control"></select>
+		    					</div>
+		    				</div>
+		    				<div class="col-xs-3 col-sm-3 col-md-3">
+		    					<div class="form-group">
+		    						<select id="dropdownDate" name="date" class="form-control"></select>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="form-group">
+		    				<input type="radio" value="Male" name="gender">Male
+		    				<input type="radio" value="Female" name="gender">Female
+		    			</div>
+		    			<div class="form-group">
+		    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+		    			</div>
+		    			
+		    			<input type="button" id="formSubmit" value="Register" class="btn btn-info btn-block">
+		    		</form>
+		    	</div>
+	   		</div>
+	   		<div class="panel-footer">
+	   			<button class="btn btn-info btn-block" id="btnLogin">Login</button>
+	   		</div>
+		</div>
+   	</div>
+	<!-- JS Loaded -->
+	<th:block th:replace="default :: jsLoad"></th:block>
+	<script th:src="@{/js/register.js}"></script>
+</body>
+</html>

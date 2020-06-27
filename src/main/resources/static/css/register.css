@@ -1,0 +1,13 @@
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.tooltip-inner{
+	background-color: red;
+}
+.tooltip.top .tooltip-arrow{
+	border-top-color: red
+}
+.panel-footer{
+	display:none;
+}

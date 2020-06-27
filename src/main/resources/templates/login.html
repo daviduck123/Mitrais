@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+	<th:block th:replace="default :: headLoad"></th:block>
+<head>
+</head>
+<body>
+	<div class="row centered-form">
+    	<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+       		<div class="panel panel-default">
+       			<div class="panel-heading">
+    				<h3 class="panel-title">Login</h3>
+ 				</div>
+		 		<div class="panel-body">
+			    	<form role="form" id="formLogin" action="/loginEmail">
+		    			<div class="form-group">
+		    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+		    			</div>
+		    			<button class="btn btn-info btn-block" id="btnLogin">Login</button>
+		    		</form>
+		    	</div>
+	   		</div>
+		</div>
+   	</div>
+	<!-- JS Loaded -->
+	<th:block th:replace="default :: jsLoad"></th:block>
+</body>
+</html>

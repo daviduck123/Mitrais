@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<th:block th:fragment="headLoad">
+	<meta charset="utf-8" />
+	<title>Mitrais Test</title>
+	<link rel="stylesheet" type="text/css" media="screen" th:href="@{/css/bootstrap.min.css}" />
+	</th:block>
+<head>
+</head>
+<body>
+	<th:block th:fragment="jsLoad">
+	<!-- JS Loaded -->
+	<script th:src="@{/js/libs/jquery-2.2.4.min.js}"></script>
+	<script th:src="@{/js/libs/jquery-ui-1.10.3.min.js}"></script>
+	<script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- 	<script th:src="@{/js/bootstrap/validator.js}"></script> -->
+	<script th:src="@{/js/bootstrap/jquery.validate.min.js}"></script>
+	<script th:src="@{/js/bootstrap/jquery-validate.bootstrap-tooltip.min.js}"></script>
+	</th:block>
+</body>
+</html>
